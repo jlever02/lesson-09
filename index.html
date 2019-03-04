@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Web Forms</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
   </head>
   <body>
     <h1>Pet Adoption Application</h1>
@@ -28,22 +28,32 @@
         <textarea name="applicantReason" rows="4" cols="50">Because I don't have enough cat hair on my sofa :(</textarea>
       </label>
 
-      <fieldset>
-        <legend>What types of animals are you interested in?</legend>
-      <label>Dogs
-        <input type="checkbox" name="type" value="dogs">
-      </label>
-      <label>Iguanas
-        <input type="checkbox" name="type" value="iguanas">
-      </label>
-      <label>Cats
-        <input type="checkbox" name="type" value="cats">
-      </label>
-    </fieldset>
+      <fieldset class="checkbox">
+        <legend>What types of animals are you interested in adopting?</legend>
+        <label>
+        <input type="checkbox" name="species" value="dogs">Dog
+        <span class="checkmark"></span>
+        </label>
+        <label>
+        <input type="checkbox" name="species" value="cat">Cat
+        <span class="checkmark"></span>
+        </label>
+        <label>
+        <input type="checkbox" name="species" value="rabbit">Rabbit
+        <span class="checkmark"></span>
+        </label>
+        <label>
+        <input type="checkbox" name="species" value="snake">Snake
+        <span class="checkmark"></span>
+        </label>
+        <label>
+        <input type="checkbox" name="species" value="other">Other
+        <span class="checkmark"></span>
+        </label>
+      </fieldset>
 
     <fieldset>
       <legend>Are you interested in adopting special needs or elderly pets?</legend>
-
       <label>
         <input type="radio" name="special" value="yes">Yes
       </label>
